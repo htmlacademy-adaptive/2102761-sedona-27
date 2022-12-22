@@ -1,0 +1,36 @@
+.page-footer{
+  text-transform: uppercase;
+  color: #000000;
+  padding: 40px 20px 25px 20px;
+
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.copyright__text{
+  margin-right: 11px;
+  text-transform: uppercase;
+}
+
+.page-footer__hashtag {
+  text-align: center;
+  display: block;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-decoration: none;
+  margin-bottom: 40px;
+}

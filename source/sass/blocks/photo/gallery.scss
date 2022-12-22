@@ -1,0 +1,40 @@
+.gallery{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.likes__count{
+  font-weight: bold;
+}
+
+.gallery-image {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gallery-image__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.gallery-image__author {
+  margin-bottom: 10px;
+}
+
+.gallery__item{
+  padding: 12px 20px;
+}
+
+.likes {
+
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.likes__count {
+  font-weight: bold;
+
+}

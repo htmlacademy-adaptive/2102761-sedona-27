@@ -1,0 +1,18 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 31px 194px 16px;
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
