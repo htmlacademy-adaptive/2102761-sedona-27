@@ -1,0 +1,22 @@
+.characteristics {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.characteristics__blu-block--blue {
+  text-align: center;
+  color: #FFFFFF;
+  border-color: #81B3D2;
+}
+
+.characteristics__title {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+}
+.characteristics__title--black {
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=characteristics.css.map */
