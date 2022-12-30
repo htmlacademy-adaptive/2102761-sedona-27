@@ -1,5 +1,13 @@
+@import "../../viewports";
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
+}
 .main-header {
-  background-color: #ffffff;
+  background-color: $white;
   position: relative;
   margin: 0 auto;
 }
@@ -11,10 +19,8 @@
   margin-left: -50px;
 }
 
-.main-nav__wrapper{
+.main-nav__wrapper {
     position: relative;
     margin: 0 auto;
-
   }
-
 

@@ -1,9 +1,9 @@
-.gallery{
+.gallery {
   margin: 0 auto;
   text-align: center;
 }
 
-.likes__count{
+.likes__count {
   font-weight: bold;
 }
 
@@ -22,12 +22,11 @@
   margin-bottom: 10px;
 }
 
-.gallery__item{
+.gallery__item {
   padding: 12px 20px;
 }
 
 .likes {
-
   width: 70px;
   justify-content: space-between;
   align-items: center;
@@ -36,5 +35,4 @@
 
 .likes__count {
   font-weight: bold;
-
 }

@@ -1,5 +1,23 @@
-.main-nav {
+@import "../../viewports";
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
+  .main-nav {
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
 }
