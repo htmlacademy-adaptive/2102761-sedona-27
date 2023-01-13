@@ -1,0 +1,13 @@
+.likes__count {
+  font-weight: bold;
+}
+
+.likes {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/*# sourceMappingURL=likes.css.map */
