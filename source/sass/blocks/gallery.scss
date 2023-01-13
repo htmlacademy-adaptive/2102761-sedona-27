@@ -1,0 +1,58 @@
+@import "../viewports";
+
+.gallery {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-image__image {
+  display: block;
+}
+
+.gallery-image {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gallery-image__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.gallery-image__author {
+  margin-bottom: 10px;
+}
+
+.gallery__item {
+  margin: 0 auto;
+  padding-top: 22px;
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+
+  .gallery__item {
+    margin: 0;
+    border: none;
+    padding-top: 0;
+  }
+}
+
+  @media (min-width: $desktop-width) {
+    .gallery {
+      width: 100%;
+    }
+
+    .gallery__item {
+      position: relative;
+      width: 400px;
+
+  }
+}

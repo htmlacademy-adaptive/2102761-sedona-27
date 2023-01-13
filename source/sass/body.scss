@@ -1,0 +1,25 @@
+
+
+body {
+  position: relative;
+  width: $body-width;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+  width: 768px
+}
+
+  @media (min-width: $desktop-width) {
+  width: 1200px
+}
+
+}
+html {
+  box-sizing: border-box;
+}
+
