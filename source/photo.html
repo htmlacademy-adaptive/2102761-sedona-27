@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Catalog</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,33 +12,25 @@
     <a class="main-header__logo">
       <img class="main-header-logo" src="img/logo_sedona-mobile.svg" width="" height="" alt="Логотип Седона.">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="main-nav main-nav__open">
+      <button class="main-nav__close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фото и ведео</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Форма отзывы</a>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-        <div class="page-header__banner">
-          <img src="" alt="Лого Седона" width="102" height="83">
-        </div>
-        <div class="main-nav__list user-list">
-          <a class="user-list__login" href="#">
-            <use xlink:href="img/sprite.svg#icon-login"></use>
-          </a>
-        </div>
-      </div>
+      <ul class="menu-nav__list">
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="photo.html">Фото и ведео</a>
+        </li>
+        <li class="menu__item menu__item--space">
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="form.html">Форма отзывы</a>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>
@@ -52,40 +45,64 @@
     <p class="photo-video__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
       политике и экономике.</p>
   </section>
-  <section class="gallery">
-    <div class="gallery__image">
-      <img class="gallery__image__image" src="" alt="">
-      <h2 class="gallery__image__title">Неродные просторы</h2>
-      <p class="gallery__image__author">Автор фото: Борис</p>
-      <span class="likes__count">1350</span>
-    </div>
-    <div class="gallery-image">
-      <img class="gallery__image-image" src="" alt="">
-      <h2 class="gallery__image-title">Местная растительность</h2>
-      <p class="gallery__image-author">Автор фото: Сергей</p>
-      <button class="likes__like-button" type="submit"></button>
-      <span class="likes__count">143</span>
-    </div>
-    <div class="gallery__item">
-      <img class="gallery__image-image" src="" alt="">
-      <h2 class="gallery__image-title">Дорога на север</h2>
-      <p class="gallery__image-author">Автор фото: Петр</p>
-      <button class="likes__like-button" type="submit"></button>
-      <span class="likes__count">96</span>
-    </div>
-    <div class="gallery__item">
-      <img class="gallery__image-image" src="" alt="">
-      <h2 class="gallery__image-title">Мост дьявола</h2>
-      <p class="gallery__image-author">Автор фото: Антон</p>
-      <button class="likes__like-button" type="submit"></button>
-      <span class="likes__count">254</span>
-    </div>
-  </section>
+  <article class="gallery">
+    <li class="gallery__item">
+      <section class="gallery--image">
+        <div class="gallery-image__wrapper">
+          <a class="gallery-image__link" href="#">
+            <img class="gallery-image__image" src="" alt="">
+          </a>
+        </div>
+        <h2 class="gallery__image__title">Неродные просторы</h2>
+        <p class="gallery__image__author">Автор фото: Борис</p>
+        <button class="likes__like-button" type="submit"></button>
+        <span class="likes likes__count">1350</span>
+      </section>
+    </li>
+    <li class="gallery__item">
+      <section class="gallery--image">
+        <div class="gallery-image__wrapper">
+          <a class="gallery-image__link" href="#">
+            <img class="gallery-image__image" src="" alt="">
+          </a>
+        </div>
+        <h2 class="gallery__image-title">Местная растительность</h2>
+        <p class="gallery__image-author">Автор фото: Сергей</p>
+        <button class="likes__like-button" type="submit"></button>
+        <span class="likes likes__count">143</span>
+      </section>
+    </li>
+    <li class="gallery__item">
+      <section class="gallery--image">
+        <div class="gallery-image__wrapper">
+          <a class="gallery-image__link" href="#">
+            <img class="gallery-image__image" src="" alt="">
+          </a>
+        </div>
+        <h2 class="gallery__image-title">Дорога на север</h2>
+        <p class="gallery__image-author">Автор фото: Петр</p>
+        <button class="likes__like-button" type="submit"></button>
+        <span class="likes likes__count">96</span>
+      </section>
+    </li>
+    <ul class="gallery__item">
+      <section class="gallery--image">
+        <div class="gallery-image__wrapper">
+          <a class="gallery-image__link" href="#">
+            <img class="gallery-image__image" src="" alt="">
+          </a>
+        </div>
+        <h2 class="gallery__image-title">Мост дьявола</h2>
+        <p class="gallery__image-author">Автор фото: Антон</p>
+        <button class="likes__like-button" type="submit"></button>
+        <span class="likes likes__count">254</span>
+      </section>
+    </ul>
+  </article>
   <section class="video">
     <div class="video__promo">
       <h2 class="video__title">Все еще сомневаетесь?</h2>
-      <p class="video__description">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в
-        очередной
+      <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
         раз!</p>
     </div>
     <div class="video__clip">

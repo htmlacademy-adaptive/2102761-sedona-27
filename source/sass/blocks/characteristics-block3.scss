@@ -1,0 +1,25 @@
+.characteristics-block3 {
+  text-transform: uppercase;
+  background-color: #EEEEEE;
+}
+
+.characteristics__list {
+  list-style: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .characteristics__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .characteristics__list {
+    display: flex;
+    flex-direction: row;
+  }
+}

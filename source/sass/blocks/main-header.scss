@@ -1,0 +1,30 @@
+@import "../viewports";
+
+.main-header {
+  background-color: $white;
+  position: relative;
+  margin: 0 auto;
+}
+
+.main-header__logo {
+  position: relative;
+  left: 50%;
+  z-index: 2;
+  margin-left: -50px;
+}
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: 768px;
+  }
+
+  .main-header__logo {
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: $desktop-width;
+  }
+}
+
