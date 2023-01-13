@@ -8,10 +8,6 @@
     "autoprefixer": "10.4.0",
     "browser-sync": "^2.11.2",
     "gulp": "4.0.2",
-<<<<<<< HEAD
-    "gulp-dart-sass": "^1.0.2",
-=======
->>>>>>> 72ab3e972fcb0617471be9e489d9699028831556
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "gulp-dart-sass": "1.0.2",
