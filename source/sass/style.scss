@@ -1,6 +1,11 @@
 @import "font-face";
 @import "viewports";
 @import "body";
+@import "blocks/visually-hidden";
+@import "blocks/button";
+@import "blocks/main";
+@import "blocks/map";
+@import "blocks/site-list";
 @import "blocks/main-header";
 @import "blocks/main-nav";
 @import "blocks/menu";
@@ -14,6 +19,7 @@
 @import "blocks/feedback-form";
 @import "blocks/feedback-header";
 @import "blocks/gallery";
+@import "blocks/gallery-image";
 @import "blocks/photo-video";
 @import "blocks/video";
 @import "blocks/likes";

@@ -2,6 +2,7 @@
 
 .menu-nav__list{
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -16,7 +17,6 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #81b3d2;
   border: 0;
 }
 
@@ -26,11 +26,7 @@
   }
 
   .menu-list__item {
-    min-height: 56px;
-    display: inline-block;
     width: 20%;
-    background-color: #ffffff;
-    border: 0;
     font-size: 14px;
     line-height: 26px;
   }
@@ -45,7 +41,6 @@
     font-size: 14px;
     font-weight: bold;
     color: #000000;
-    background-color: #ffffff;
   }
 }
 @media (min-width: $desktop-width) {

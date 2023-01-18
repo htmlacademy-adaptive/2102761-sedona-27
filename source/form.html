@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <title>Form</title>
 </head>
-<body class="page__body">
+<body>
 <header class="main-header">
-  <div class="container">
-    <a class="main-header__logo">
-      <img class="main-header-logo" src="img/logo_sedona-mobile.svg" width="" height="" alt="Логотип Седона.">
-    </a>
-    <nav class="main-nav main-nav__open">
-      <button class="main-nav__close" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="menu-nav__list">
+  <a class="main-header__logo">
+    <img class="main-header-logo" src="img/logo_sedona-mobile.svg" width="" height="" alt="Логотип Седона.">
+  </a>
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <div class="main-nav__wrapper">
+      <ul class="menu-nav__list site-list">
         <li class="menu-list__item">
           <a class="menu-list__link" href="index.html">Главная</a>
         </li>
-        <li class="menu-list__item">
+        <li class="menu-list__item site-list__item--active">
           <a class="menu-list__link" href="photo.html">Фото и ведео</a>
         </li>
         <li class="menu__item menu__item--space">
@@ -31,8 +28,11 @@
           <a class="menu-list__link" href="#">HTML Academy</a>
         </li>
       </ul>
-    </nav>
-  </div>
+    </div>
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+  </nav>
 </header>
 <main class="main">
   <div class="banner">
@@ -43,7 +43,8 @@
   <section class="feedback">
     <header class="feedback-header">
       <h1 class="feedback-header__title">Оставьте свой отзыв</h1>
-      <p class="feedback-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также опосещенных вами достопримечательностях.</p>
+      <p class="feedback-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также
+        опосещенных вами достопримечательностях.</p>
     </header>
     <form class="feedback__form form" method="post">
       <div class="form__container form__container--fullname">
@@ -178,5 +179,6 @@
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </p>
 </footer>
+<script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>

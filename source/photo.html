@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Catalog</title>
+  <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page__body">
+<body>
 <header class="main-header">
-  <div class="container">
-    <a class="main-header__logo">
-      <img class="main-header-logo" src="img/logo_sedona-mobile.svg" width="" height="" alt="Логотип Седона.">
-    </a>
-    <nav class="main-nav main-nav__open">
-      <button class="main-nav__close" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="menu-nav__list">
+  <a class="main-header__logo">
+    <img class="main-header-logo" src="img/logo_sedona-mobile.svg" width="" height="" alt="Логотип Седона.">
+  </a>
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <div class="main-nav__wrapper">
+      <ul class="menu-nav__list site-list">
         <li class="menu-list__item">
           <a class="menu-list__link" href="index.html">Главная</a>
         </li>
-        <li class="menu-list__item">
+        <li class="menu-list__item site-list__item--active">
           <a class="menu-list__link" href="photo.html">Фото и ведео</a>
         </li>
         <li class="menu__item menu__item--space">
@@ -31,8 +28,11 @@
           <a class="menu-list__link" href="#">HTML Academy</a>
         </li>
       </ul>
-    </nav>
-  </div>
+    </div>
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+  </nav>
 </header>
 <main class="main edge-shadows">
   <div class="promo promo--inner">
@@ -46,17 +46,23 @@
       политике и экономике.</p>
   </section>
   <article class="gallery">
-    <li class="gallery__item">
+    <li class="gallery__item gallery__item__position">
       <section class="gallery--image">
         <div class="gallery-image__wrapper">
           <a class="gallery-image__link" href="#">
             <img class="gallery-image__image" src="" alt="">
           </a>
         </div>
+        <section class="gallery-image__footer">
+          <div class="gallery-image__sign">
         <h2 class="gallery__image__title">Неродные просторы</h2>
         <p class="gallery__image__author">Автор фото: Борис</p>
+        </div>
+          <div class="gallery-image__likes likes">
         <button class="likes__like-button" type="submit"></button>
-        <span class="likes likes__count">1350</span>
+        <span class="likes__count">1350</span>
+          </div>
+        </section>
       </section>
     </li>
     <li class="gallery__item">
@@ -66,10 +72,16 @@
             <img class="gallery-image__image" src="" alt="">
           </a>
         </div>
-        <h2 class="gallery__image-title">Местная растительность</h2>
-        <p class="gallery__image-author">Автор фото: Сергей</p>
-        <button class="likes__like-button" type="submit"></button>
-        <span class="likes likes__count">143</span>
+        <section class="gallery-image__footer">
+          <div class="gallery-image__sign">
+            <h2 class="gallery__image-title">Местная растительность</h2>
+            <p class="gallery__image-author">Автор фото: Сергей</p>
+          </div>
+          <div class="gallery-image__likes likes">
+            <button class="likes__like-button" type="submit"></button>
+            <span class=" likes__count">143</span>
+          </div>
+        </section>
       </section>
     </li>
     <li class="gallery__item">
@@ -79,25 +91,37 @@
             <img class="gallery-image__image" src="" alt="">
           </a>
         </div>
+        <section class="gallery-image__footer">
+          <div class="gallery-image__sign">
         <h2 class="gallery__image-title">Дорога на север</h2>
         <p class="gallery__image-author">Автор фото: Петр</p>
+          </div>
+          <div class="gallery-image__likes likes">
         <button class="likes__like-button" type="submit"></button>
-        <span class="likes likes__count">96</span>
+        <span class="likes__count">96</span>
+          </div>
+        </section>
       </section>
     </li>
-    <ul class="gallery__item">
+    <li class="gallery__item">
       <section class="gallery--image">
         <div class="gallery-image__wrapper">
           <a class="gallery-image__link" href="#">
             <img class="gallery-image__image" src="" alt="">
           </a>
         </div>
+        <section class="gallery-image__footer">
+          <div class="gallery-image__sign">
         <h2 class="gallery__image-title">Мост дьявола</h2>
         <p class="gallery__image-author">Автор фото: Антон</p>
+          </div>
+          <div class="gallery-image__likes likes">
         <button class="likes__like-button" type="submit"></button>
-        <span class="likes likes__count">254</span>
+        <span class="likes__count">254</span>
+          </div>
+        </section>
       </section>
-    </ul>
+    </li>
   </article>
   <section class="video">
     <div class="video__promo">
@@ -136,5 +160,6 @@
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </p>
 </footer>
+<script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
