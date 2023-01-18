@@ -7,7 +7,6 @@
 
 .advantages__wrapper {
   text-align: left;
-
 }
 
 .advantages__list {
@@ -57,7 +56,6 @@
     justify-content: center;
   }
 
-
   .advantages__list {
     text-align: center;
     list-style: none;
@@ -103,11 +101,10 @@
     }
   }
 
-  .advantages__text{
+  .advantages__text {
     margin-bottom: 60px;
     padding: 5px 22px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -120,19 +117,19 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
-    padding: 5px -1px
+    padding: 5px -1px;
   }
 
   .advantages__list {
     padding: 0;
   }
+
   .advantages__item {
     width: 400px;
   }
+
   .advantages__wrapper {
-  padding-top: 80px;
-
-  text-align: center;
+    padding-top: 80px;
+    text-align: center;
+  }
 }
-}
-

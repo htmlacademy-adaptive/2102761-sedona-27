@@ -1,6 +1,6 @@
 @import "../viewports";
 
-.menu-nav__list{
+.menu-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -21,7 +21,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .menu-nav__list{
+  .menu-nav__list {
     display: flex;
   }
 
@@ -31,7 +31,7 @@
     line-height: 26px;
   }
 
-  .menu__item--space{
+  .menu__item--space {
     flex-grow: 1;
   }
 
@@ -43,6 +43,7 @@
     color: #000000;
   }
 }
+
 @media (min-width: $desktop-width) {
   .menu-list__link {
     width: 240px;

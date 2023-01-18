@@ -10,7 +10,7 @@
   top: 50%;
   left: 50%;
   height: auto;
-  transform: translate(-50%,-50%);
+  transform: translate (-50%, -50%);
 }
 
 @media (min-width: $tablet-width) {
@@ -19,7 +19,6 @@
     width: 768px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .map,

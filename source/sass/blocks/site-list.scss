@@ -6,7 +6,6 @@
   position: relative;
   display: block;
   padding: 20px;
-  padding-bottom: 20px;
   font-size: 18px;
   line-height: 18px;
   text-align: center;
@@ -20,10 +19,8 @@
     width: 153px;
     font-size: 14px;
     font-weight: bold;
-
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .site-list {
@@ -34,6 +31,7 @@
     flex-grow: 1;
   }
 }
+
 @media (min-width: $desktop-width) {
   .site-list {
     width: 1200px;

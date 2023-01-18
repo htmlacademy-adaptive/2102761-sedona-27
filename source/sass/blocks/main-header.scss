@@ -8,7 +8,6 @@
 
 .page-header__open-nav-button {
   position: relative;
-
   width: 23px;
   height: 23px;
   margin-right: 20px;
@@ -19,17 +18,14 @@
   position: absolute;
   top: 1px;
   left: 0;
-
   width: 23px;
   height: 4px;
-
 }
 
 .page-header__logo {
   position: absolute;
   left: 50%;
   z-index: 2;
-
   margin-left: -51px;
 }
 
@@ -45,17 +41,13 @@
   height: 56px;
 }
 
-
-
-
-
-
 .main-header__logo {
   position: relative;
   left: 50%;
   z-index: 2;
   margin-left: -50px;
 }
+
 @media (min-width: $tablet-width) {
   .main-header {
     width: 768px;
@@ -71,4 +63,3 @@
     width: 1200px;
   }
 }
-

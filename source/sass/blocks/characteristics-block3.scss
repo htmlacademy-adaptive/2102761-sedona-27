@@ -1,21 +1,22 @@
 .characteristics-block3 {
   text-transform: uppercase;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
 .characteristics__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  text-align: center;
 }
-
 
 @media (min-width: $tablet-width) {
   .characteristics__list {
     display: flex;
     flex-direction: row;
   }
-
 }
-
 
 @media (min-width: $desktop-width) {
   .characteristics__list {

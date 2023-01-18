@@ -26,24 +26,22 @@
     padding-top: 0;
   }
 
-  .gallery__item__position{
+  .gallery__item__position {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
     width: 100%;
   }
 
-}
-
-  @media (min-width: $desktop-width) {
-    .gallery {
-      width: 100%;
-    }
-
-    .gallery__item {
-      position: relative;
-      width: 400px;
+  .gallery__item {
+    position: relative;
+    width: 400px;
   }
 
-    .gallery__item__position{
-      width: 100%;
-    }
-
+  .gallery__item__position {
+    width: 100%;
+  }
 }
