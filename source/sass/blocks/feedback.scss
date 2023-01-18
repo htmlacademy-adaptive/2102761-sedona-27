@@ -6,10 +6,9 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    width: $tablet-width;
+    width: 648px;
     margin: 0 auto;
-    padding-left: 60px;
-    padding-right: 60px;
+    box-sizing: border-box;
   }
 }
 

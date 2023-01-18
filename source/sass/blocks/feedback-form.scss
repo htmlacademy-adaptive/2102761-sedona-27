@@ -124,14 +124,21 @@
 
 @media (min-width: $tablet-width) {
   .feedback__form {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 55px;
+  }
+
+  .form__selector-radio__wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .form__container {
     border-top: 0;
     position: relative;
+    padding: 0;
+    width: 100%;
   }
 
   .form__input--textarea {
@@ -155,6 +162,10 @@
     width: 460px;
     margin: 0 auto;
     justify-content: space-between;
+  }
+
+  .feedback__form__wrapper__inputs {
+    display: flex;
   }
 }
 
@@ -199,4 +210,40 @@
     width: 480px;
     padding-left: 80px;
   }
+}
+
+//Витин код по чекбоксам и радиокнопкам
+.form__selector--radio:checked ~ .fakeRadio .fakeRadio_check {
+
+//background-color: black;
+  display: block;
+}
+
+.fakeRadio {
+
+border-radius: 50%;
+  background: #F2F2F2;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fakeRadio_check {
+//display: block;
+display: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: black;
+
+}
+
+.form__selector-label input {
+  display: none;
+}
+
+.form__selector-label {
+  cursor: pointer;
 }

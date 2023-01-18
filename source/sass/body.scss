@@ -6,16 +6,11 @@ body {
   line-height: 21px;
   font-family: $basic-font-family;
   font-style: normal;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
 }
 
 html {
   box-sizing: border-box;
+}
+input {
+  border: 0;
 }
