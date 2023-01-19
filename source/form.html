@@ -51,12 +51,15 @@
       <div class="form__container form__container--fullname">
         <div class="form__div">
           <h2 class="form__legend form__legend--fullname">Представьтесь:</h2>
-          <p class="form__group form__group--fullname"><label for="first-name" class="form__label">Имя*:</label>
+          <p class="form__group form__group--fullname">
+            <label for="first-name" class="form__label">Имя*:</label>
             <input id="first-name" class="form__input" type="text" name="first-name" placeholder="Имя" value="Петр" required></p>
-          <p class="form__group form__group--fullname"><label class="form__label">Фамилия*:</label>
-            <input class="form__input" type="text" name="last-name" placeholder="Фамилия" value="Иванов" required></p>
-          <p class="form__group form__group--fullname"><label class="form__label">Отчество:</label>
-            <input class="form__input" type="text" name="middle-name" placeholder="Отчество" value="Александрович"></p>
+          <p class="form__group form__group--fullname">
+            <label for="last-name" class="form__label">Фамилия*:</label>
+            <input id="last-name" class="form__input" type="text" name="last-name" placeholder="Фамилия" value="Иванов" required></p>
+          <p class="form__group form__group--fullname">
+            <label for="middle-name" class="form__label">Отчество:</label>
+            <input id="middle-name" class="form__input" type="text" name="middle-name" placeholder="Отчество" value="Александрович"></p>
         </div>
       </div>
       <div class="form__container form__container--communication">
@@ -86,7 +89,7 @@
       <div class="form__container form__container--impression">
         <div class="form__div">
           <h2 class="form__legend form__legend--impression">Ваше общее впечатление:</h2>
-         <div class="form__selector-radio__wrapper">
+          <div class="form__selector-radio__wrapper">
           <label class="form__selector-label">
             <input class="form__selector form__selector--radio visually-hidden" type="radio" name="radio" value="positive" checked>
             <span class="fakeRadio">
@@ -109,7 +112,7 @@
             <span class="form__selector-indicator form__selector-indicator--radio"></span>
             <span class="form__selector-text">Затрудняюсь ответить</span>
           </label>
-         </div>
+          </div>
         </div>
       </div>
       <div class="form__container form__container--sights">
