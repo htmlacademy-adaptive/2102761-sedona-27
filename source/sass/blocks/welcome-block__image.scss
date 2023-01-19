@@ -1,57 +1,18 @@
-.promo {
-  background-image: url("../img/bg-intro-triangle-mobile.svg"),
-  url('../img/bg-back-mobile@1x.jpg');
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom, center top;
-  background-size: auto, cover;
-  height: 390px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.promo__wrapper {
+.welcome-block__image{
   text-align: center;
-  padding-top: 90px;
+  background-color: #d3edfb;
+  background-image: url("./source/img/back-desktop.jpg.jpg");
+  height: 390px;
+  position: relative;
+
 }
 
-@media (min-width: $tablet-width) {
-  .promo {
-    background-color: $white;
-    background-image: url("../img/bg-intro-triangle-tablet.svg"),
-    url('../img/bg-back-tablet@1x.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom, center top;
-    background-size: auto, cover;
-    height: 518px;
-  }
-
-  .promo__text-image {
-    width: 460px;
-  }
-
-  .promo__wrapper {
-    padding-top: 77px;
-
-    &--inner {
-      padding-top: 100px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo {
-    width: $desktop-width;
-    margin: 0 auto;
-    background-image: url("../img/bg-intro-triangle-desktop.svg"),
-    url('../img/bg-back-desktop@1x.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom, center top;
-    background-size: auto, cover;
-    height: 518px;
-
-    &--inner {
-      height: 300px;
-      background-position: left bottom, left bottom;
-      background-size: contain, cover;
-    }
-  }
+.promo__text-image{
+  height: 390px;
 }
 
