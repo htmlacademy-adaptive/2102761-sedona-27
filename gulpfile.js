@@ -10,6 +10,7 @@ import browser from 'browser-sync';
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
+    .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
