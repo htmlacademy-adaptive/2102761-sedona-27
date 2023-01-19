@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/2102761-sedona-27/12/">
+</head>
+<body>
+<header class="main-header">
+  <a class="main-header__logo">
+    <img class="main-header-logo" src="img/logo_sedona-mobile.svg" width="" height="" alt="Логотип Седона.">
+  </a>
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <div class="main-nav__wrapper">
+    <ul class="menu-nav__list site-list">
+      <li class="menu-list__item">
+        <a class="menu-list__link" href="index.html">Главная</a>
+      </li>
+      <li class="menu-list__item site-list__item--active">
+        <a class="menu-list__link" href="photo.html">Фото и ведео</a>
+      </li>
+      <li class="menu__item menu__item--space">
+      </li>
+      <li class="menu-list__item">
+        <a class="menu-list__link" href="form.html">Форма отзывы</a>
+      <li class="menu-list__item">
+        <a class="menu-list__link" href="#">HTML Academy</a>
+      </li>
+    </ul>
+    </div>
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+  </nav>
+</header>
+<main class="main-container">
+  <div class="welcome-block__image">
+    <h1 class="visually-hidden">Седона.</h1>
+    <img class="promo__text-image" src="img/text-index.svg" width="280" height="213" alt="Промо текст Седона">
+  </div>
+  <section class="welcome-block">
+      <h2 class="visually-hidden">Описание Седоны.</h2>
+      <p class="welcome__slogan">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
+      <p class="welcome__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
+  </section>
+  <section class="characteristics ">
+    <div class="characteristics__wrapper characteristics__blu-block">
+      <h2 class="characteristics__title">Настоящий городок</h2>
+      <div class="characteristics__number-wrapper">
+        <span class="characteristics__number">№1</span>
+      </div>
+      <p class="characteristics__text">Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
+      <img class="characteristics__image" src="" width="" height="" alt="Седона">
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="advantages__wrapper">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <ul class="advantages__list mobile__hid tablet__hid desktop__hid">
+        <li class="advantages__item house">
+          <h3 class="advantages__title">Жилье</h3>
+          <p class="advantages__text ">Рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
+        </li>
+        <li class="advantages__item food">
+          <h3 class="advantages__title">Еда</h3>
+          <p class="advantages__text">Всегда заказывайте фирменный<br> бургер, Вы не разочаруетесь!</p>
+        </li>
+        <li class="advantages__item souvenirs">
+          <h3 class="advantages__title">Сувениры</h3>
+          <p class="advantages__text">Не только китайского, но и<br> местного производства!</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="characteristics">
+    <div class="characteristics__wrapper characteristics__blu-block">
+      <h2 class="characteristics__title">Там есть Мост дьявола</h2>
+      <div class="characteristics__number-wrapper">
+        <span class="characteristics__number">№2</span>
+      </div>
+      <p class="characteristics__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      <div class="characteristics__image" src="" width="" height="" alt="Седона"></div>
+    </div>
+  </section>
+  <section class="characteristics-block3">
+    <div class="characteristics__wrapper">
+      <h2 class="visually-hidden">Плюсы города.</h2>
+      <ul class="characteristics__list">
+        <li class="characteristics__item">
+          <h3 class="characteristics__title">Небольшая площадь</h3>
+          <div class="characteristics__number-wrapper">
+            <span class="characteristics__number">№3</span>
+          </div>
+          <p class="characteristics__description">Все интересные места находятся очень близко</p>
+        </li>
+        <li class="characteristics__item">
+          <h3 class="characteristics__title">Красивая дорога</h3>
+          <div class="characteristics__number-wrapper">
+            <span class="characteristics__number">№4</span>
+          </div>
+          <p class="characteristics__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+        <li class="characteristics__item">
+          <h3 class="characteristics__title">Мало туристов</h3>
+          <div class="characteristics__number-wrapper">
+            <span class="characteristics__number">№5</span>
+          </div>
+          <p class="characteristics__description">Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="search-hotel">
+    <div class="search-hotel__wrapper">
+      <h2 class="search-hotel__title">Заинтересовались?</h2>
+      <p class="search-hotel__description">Укажите предпологаемые даты поездки, и мы покажем вам лучшие
+        предложения гостиниц в Седооне
+      </p>
+      <a class="button search-hotel__button">Найти гостинницу</a>
+    </div>
+  </section>
+  <article class="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d6a85f289544fbe86246130d1490f5326427fcd87cbcaa9b20556d505df7dc6&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false&amp;centering:true"></script>
+    <picture>
+      <source media="(min-width:1200px)" srcset="img/bg-map-desktop@2x.jpg 2x, img/bg-map-desktop@1x.jpg 1x">
+      <source media="(min-width:768px)" srcset="img/bg-map-tablet@2x.jpg 2x, img/bg-map-tablet@1x.jpg 1x">
+      <source media="(min-width:320px)" srcset="img/bg-map-mobile@2x.jpg 2x, img/bg-map-mobile@1x.jpg 1x">
+      <img class="map__picture" width="320" height="350" src="img/bg-map-desktop@1x.jpg" alt="Map 0f Sedona">
+    </picture>
+  </article>
+</main>
+<footer class="page-footer">
+  <a class="page-footer__hashtag" href="#">#visitsedona</a>
+  <div class="page-footer__social social">
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Твиттер.</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Фейсбук.</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Ютуб.</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <p class="page-footer__copyright">
+    <b class="copyright__text">Разработано</b>
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  </p>
+</footer>
+<script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
