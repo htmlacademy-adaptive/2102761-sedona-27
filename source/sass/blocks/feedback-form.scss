@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-.button--review{
-
-}
-
 .form__container {
   padding: 20px;
   padding-bottom: 30px;
@@ -76,6 +72,7 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .form__selector--radio {
@@ -126,6 +123,34 @@
   opacity: 0.3;
 }
 
+.form__selector--radio:checked ~ .fakeRadio .fakeRadio_check {
+  //background-color: black;
+  display: block;
+}
+
+.fakeRadio {
+  border-radius: 50%;
+  background: #f2f2f2;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fakeRadio_check {
+  //display: block;
+  display: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $black;
+}
+
+.form__selector-label input {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .feedback__form {
     flex-direction: column;
@@ -173,23 +198,24 @@
     display: flex;
   }
 
-  .form__container--button{
+  .form__container--button {
     padding-top: 55px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .form__container--review{
+  .form__container--review {
     padding-top: 50px;
   }
-  .form__container--sights{
+
+  .form__container--sights {
     padding-top: 36px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .feedback__form{
+  .feedback__form {
     flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 55px;
@@ -225,43 +251,7 @@
     display: flex;
   }
 
-  .form__container--button{
-  padding-top: 55px;
-}
-}
-
-//Витин код по чекбоксам и радиокнопкам
-.form__selector--radio:checked ~ .fakeRadio .fakeRadio_check {
-
-//background-color: black;
-  display: block;
-}
-
-.fakeRadio {
-
-border-radius: 50%;
-  background: #F2F2F2;
-  width: 46px;
-  height: 46px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fakeRadio_check {
-//display: block;
-display: none;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: black;
-
-}
-
-.form__selector-label input {
-  display: none;
-}
-
-.form__selector-label {
-  cursor: pointer;
+  .form__container--button {
+    padding-top: 55px;
+  }
 }
