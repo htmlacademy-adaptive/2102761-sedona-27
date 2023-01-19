@@ -1,0 +1,47 @@
+@import "../viewports";
+
+.gallery {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery__item {
+  margin: 0 auto;
+  padding-top: 22px;
+  list-style: none;
+  width: 324px;
+  border-top: 1px solid #d6d6d6;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+
+  .gallery__item {
+    margin: 0;
+    border: none;
+    padding-top: 0;
+  }
+
+  .gallery__item__position {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery__item {
+    position: relative;
+    width: 400px;
+  }
+
+  .gallery__item__position {
+    width: 100%;
+  }
+}

@@ -1,0 +1,49 @@
+.video {
+  margin: 0 auto;
+}
+
+.video__promo {
+  padding: 35px 20px;
+}
+
+.video__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video__description {
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    margin: 0 auto;
+  }
+
+  .video__promo {
+    padding: 65px 60px;
+  }
+
+  .video__title {
+    font-size: 30px;
+  }
+
+  .video__description {
+    padding-left: 110px;
+    padding-right: 94px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__promo {
+    padding: 70px 200px;
+  }
+
+  .video__description {
+    padding: 0 177px;
+  }
+}

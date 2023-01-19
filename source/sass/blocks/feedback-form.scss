@@ -1,0 +1,257 @@
+@import "../viewports";
+
+.feedback__form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.form__container {
+  padding: 20px;
+  padding-bottom: 30px;
+  position: relative;
+  order: 2;
+  width: 324px;
+  padding-left: 54px;
+}
+
+.form__fieldset {
+  margin-bottom: 70px;
+}
+
+.form__legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.form__group {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form__label {
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.form__input {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.form__input--textarea {
+  min-height: 160px;
+}
+
+.form__selector-indicator {
+  position: relative;
+  display: block;
+  width: 56px;
+  margin-right: 22px;
+  background-color: #f2f2f2;
+}
+
+.form__selectors-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__selector-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.form__selector--radio {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-top: -11px;
+  margin-left: -11px;
+  border-radius: 50%;
+}
+
+.form__selector--checkbox {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  display: block;
+  width: 24px;
+  height: 16px;
+  margin-top: -8px;
+  margin-left: -12px;
+}
+
+.form__selector-indicator--radio {
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+.form__selector--radio:checked + .form__selector-indicator:active::before {
+  opacity: 0.3;
+}
+
+.form__selector--checkbox:checked + .form__selector-indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 24px;
+  height: 16px;
+  margin-top: -8px;
+  margin-left: -12px;
+}
+
+.form__selector--checkbox:checked + .form__selector-indicator:active::before {
+  opacity: 0.3;
+}
+
+.form__selector--radio:checked ~ .fakeRadio .fakeRadio_check {
+  //background-color: black;
+  display: block;
+}
+
+.fakeRadio {
+  border-radius: 50%;
+  background: #f2f2f2;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fakeRadio_check {
+  //display: block;
+  display: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $black;
+}
+
+.form__selector-label input {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 55px;
+  }
+
+  .form__selector-radio__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__container {
+    border-top: 0;
+    position: relative;
+    padding: 0;
+    width: 100%;
+  }
+
+  .form__input--textarea {
+    width: 648px;
+  }
+
+  .form__legend {
+    margin-bottom: 60px;
+    font-size: 21px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .form__legend-fixed-content {
+    display: inline-block;
+    width: 300px;
+  }
+
+  .form__selectors-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 460px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .feedback__form__wrapper__inputs {
+    display: flex;
+  }
+
+  .form__container--button {
+    padding-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__container--review {
+    padding-top: 50px;
+  }
+
+  .form__container--sights {
+    padding-top: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 55px;
+  }
+
+  .form__label-hidden {
+    display: none;
+  }
+
+  .form__group-wrapper {
+    justify-content: space-between;
+  }
+
+  .form__group {
+    align-items: center;
+  }
+
+  .form__selectors-wrapper {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .form__fieldset {
+    margin-bottom: 50px;
+    display: flex;
+  }
+
+  .form__input--textarea {
+    width: 768px;
+  }
+
+  .feedback__form__wrapper__inputs {
+    display: flex;
+  }
+
+  .form__container--button {
+    padding-top: 55px;
+  }
+}

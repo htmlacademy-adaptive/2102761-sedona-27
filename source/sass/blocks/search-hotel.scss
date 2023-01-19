@@ -1,0 +1,25 @@
+.search-hotel {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 50px;
+}
+
+.search-hotel__title {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.search-hotel__description {
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .search-hotel__button {
+    min-width: 458px;
+  }
+
+  .search-hotel {
+    padding: 55px 155px;
+  }
+}

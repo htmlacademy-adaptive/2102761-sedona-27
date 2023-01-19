@@ -1,0 +1,51 @@
+@import "../viewports";
+
+.menu-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-nav__list {
+    display: flex;
+  }
+
+  .menu-list__item {
+    width: 20%;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .menu__item--space {
+    flex-grow: 1;
+  }
+
+  .menu-list__link {
+    border: none;
+    width: 153px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-list__link {
+    width: 240px;
+  }
+}
