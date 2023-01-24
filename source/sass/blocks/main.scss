@@ -2,9 +2,8 @@
   display: block;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .main-container {
-    max-width: $desktop-width;
     margin: 0 auto;
   }
 }

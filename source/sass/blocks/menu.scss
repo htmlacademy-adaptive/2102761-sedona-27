@@ -26,7 +26,6 @@
   }
 
   .menu-list__item {
-    width: 20%;
     font-size: 14px;
     line-height: 26px;
   }
@@ -41,6 +40,10 @@
     font-size: 14px;
     font-weight: bold;
     color: #000000;
+  }
+
+  .menu-list__link:not([href]) {
+    color: #766357;
   }
 }
 

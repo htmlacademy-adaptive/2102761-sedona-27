@@ -5,9 +5,9 @@
 .site-list a {
   position: relative;
   display: block;
-  padding: 20px;
+  padding: 18px 0 17px;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -16,9 +16,9 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    width: 153px;
     font-size: 14px;
     font-weight: bold;
+    box-sizing: border-box;
   }
 }
 

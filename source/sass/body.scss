@@ -15,3 +15,43 @@ html {
 input {
   border: 0;
 }
+
+.br__mobile {
+  display: block;
+}
+
+.br__tablet {
+  display: none;
+}
+
+.br__desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .br__mobile {
+    display: none;
+  }
+
+  .br__tablet {
+    display: block;
+  }
+
+  .br__desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .br__mobile {
+    display: none;
+  }
+
+  .br__tablet {
+    display: none;
+  }
+
+  .br__desktop {
+    display: block;
+  }
+}

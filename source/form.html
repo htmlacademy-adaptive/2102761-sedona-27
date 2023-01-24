@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon-32x32.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
 <header class="main-header">
@@ -35,9 +39,10 @@
   </nav>
 </header>
 <main class="main">
-  <div class="banner">
-    <div class="banner__wrapper">
-      <img class="banner__text-image" src="" width="" height="" alt="">
+  <div class="welcome-block__image welcome-block--inner">
+    <div class="welcome-block__wrapper welcome-block__wrapper--inner">
+      <h1 class="visually-hidden">Седона.</h1>
+      <img class="promo__text-image" src="img/sedona-photo.svg" width="280" height="213" alt="Промо текст Седона">
     </div>
   </div>
   <section class="feedback">
@@ -162,26 +167,28 @@
   <a class="page-footer__hashtag" href="#">#visitsedona</a>
   <div class="page-footer__social social">
     <ul class="social__list">
-      <li class="social__item">
+      <li class="social__item vk">
         <a class="social__link" href="#">
-          <span class="visually-hidden">Твиттер.</span>
+          <span class="visually-hidden">Вконтакте.</span>
         </a>
       </li>
-      <li class="social__item">
+      <li class="social__item telegram">
         <a class="social__link" href="#">
-          <span class="visually-hidden">Фейсбук.</span>
+          <span class="visually-hidden">Телеграм.</span>
         </a>
       </li>
-      <li class="social__item">
+      <li class="social__item youtube">
         <a class="social__link" href="#">
           <span class="visually-hidden">Ютуб.</span>
         </a>
       </li>
     </ul>
   </div>
-  <p class="page-footer__copyright">
+  <p class="page-footer__copyright copyright">
     <b class="copyright__text">Разработано</b>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <a class="copyright__link" href="#">
+      <span class="visually-hidden">HTML Academy</span>
+    </a>
   </p>
 </footer>
 <script src="js/script.js" charset="utf-8"></script>

@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon-32x32.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
 <header class="main-header">
@@ -35,9 +39,10 @@
   </nav>
 </header>
 <main class="main edge-shadows">
-  <div class="promo promo--inner">
-    <div class="promo__wrapper promo__wrapper--inner">
-      <img class="" src="" width="" height="" alt="">
+  <div class="welcome-block__image welcome-block--inner">
+    <div class="welcome-block__wrapper welcome-block__wrapper--inner">
+      <h1 class="visually-hidden">Седона.</h1>
+      <img class="promo__text-image" src="img/sedona-photo.svg" width="280" height="213" alt="Промо текст Седона">
     </div>
   </div>
   <section class="photo-video">
@@ -50,7 +55,12 @@
       <section class="gallery--image">
         <div class="gallery-image__wrapper">
           <a class="gallery-image__link" href="#">
-            <img class="gallery-image__image" src="" alt="">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-1-desktop@2x.jpg 2x, img/photo-1-desktop@1x.jpg 1x">
+              <source media="(min-width:768px)" srcset="img/photo-1-tablet@2x.jpg 2x, img/photo-1-tablet@1.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/photo-1-mobile@2x.jpg 2x, img/photo-1-mobile@1x.jpg 1x">
+              <img class="gallery-image__image" src="img/photo-1-desktop@1x.jpg" alt="Sedona">
+            </picture>
           </a>
         </div>
         <section class="gallery-image__footer">
@@ -69,7 +79,12 @@
       <section class="gallery--image">
         <div class="gallery-image__wrapper">
           <a class="gallery-image__link" href="#">
-            <img class="gallery-image__image" src="" alt="">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-2-desktop@2x.jpg 2x, img/photo-2-desktop@1x.jpg 1x">
+              <source media="(min-width:768px)" srcset="img/photo-2-tablet@2x.jpg 2x, img/photo-2-tablet@1x.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/photo-2-mobile@2x.jpg 2x, img/photo-2-mobile@1.jpg 1x">
+              <img class="gallery-image__image" src="img/photo-2-desktop@1x.jpg" alt="Sedona">
+            </picture>
           </a>
         </div>
         <section class="gallery-image__footer">
@@ -88,7 +103,12 @@
       <section class="gallery--image">
         <div class="gallery-image__wrapper">
           <a class="gallery-image__link" href="#">
-            <img class="gallery-image__image" src="" alt="">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-3-desktop@2x.jpg 2x, img/photo-3-desktop@1x.jpg 1x">
+              <source media="(min-width:768px)" srcset="img/photo-3-table@2x.jpg 2x, img/photo-3-table@1x.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/photo-3-mobile@2x.jpg 2x, img/photo-3-mobile@1x.jpg 1x">
+              <img class="gallery-image__image" src="img/photo-3-desktop@1x.jpg" alt="Sedona">
+            </picture>
           </a>
         </div>
         <section class="gallery-image__footer">
@@ -107,7 +127,12 @@
       <section class="gallery--image">
         <div class="gallery-image__wrapper">
           <a class="gallery-image__link" href="#">
-            <img class="gallery-image__image" src="" alt="">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-4-desktop@2x.jpg 2x, img/photo-4-desktop@1x.jpg 1x">
+              <source media="(min-width:768px)" srcset="img/photo-4-tablet@2x.jpg 2x, img/photo-4-tablet@1x.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/photo-4-mobile@2x.jpg 2x, img/photo-4-mobile@1x.jpg 1x">
+              <img class="gallery-image__image" src="img/photo-4-desktop@1x.jpg" alt="Sedona">
+            </picture>
           </a>
         </div>
         <section class="gallery-image__footer">
@@ -130,7 +155,14 @@
         раз!</p>
     </div>
     <div class="video__clip">
-      <img class="video__image" src="" alt="">
+      <div class="video__image-poster">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/video-desktop@2x.jpg 2x, img/video-desktop@1x.jpg 1x">
+          <source media="(min-width:768px)" srcset="img/video-tablet@2x.jpg 2x, img/video-tablet@1x.jpg 1x">
+          <source media="(min-width:320px)" srcset="img/video-mobile@2x.png 2x, img/video-mobile@1x.jpg 1x">
+          <img class="video__image" src="img/video-desktop@1x.jpg" alt="Видео о Седоне">
+        </picture>
+      </div>
     </div>
   </section>
 </main>
@@ -138,26 +170,28 @@
   <a class="page-footer__hashtag" href="#">#visitsedona</a>
   <div class="page-footer__social social">
     <ul class="social__list">
-      <li class="social__item">
+      <li class="social__item vk">
         <a class="social__link" href="#">
-          <span class="visually-hidden">Твиттер.</span>
+          <span class="visually-hidden">Вконтакте.</span>
         </a>
       </li>
-      <li class="social__item">
+      <li class="social__item telegram">
         <a class="social__link" href="#">
-          <span class="visually-hidden">Фейсбук.</span>
+          <span class="visually-hidden">Телеграм.</span>
         </a>
       </li>
-      <li class="social__item">
+      <li class="social__item youtube">
         <a class="social__link" href="#">
           <span class="visually-hidden">Ютуб.</span>
         </a>
       </li>
     </ul>
   </div>
-  <p class="page-footer__copyright">
+  <p class="page-footer__copyright copyright">
     <b class="copyright__text">Разработано</b>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <a class="copyright__link" href="#">
+      <span class="visually-hidden">HTML Academy</span>
+    </a>
   </p>
 </footer>
 <script src="js/script.js" charset="utf-8"></script>
