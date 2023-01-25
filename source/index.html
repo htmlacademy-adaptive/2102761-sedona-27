@@ -11,6 +11,7 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
+<div class="shadows">
 <header class="main-header">
   <svg style="display: none">
 
@@ -22,7 +23,7 @@
     <div class="main-nav__wrapper">
       <ul class="menu-nav__list site-list">
         <li class="menu-list__item">
-          <a class="menu-list__link" href="index.html">Главная</a>
+          <a class="menu-list__link active" href="index.html">Главная</a>
         </li>
         <li class="menu-list__item site-list__item--active">
           <a class="menu-list__link" href="photo.html">Фото и видео</a>
@@ -52,14 +53,14 @@
   </div>
   <section class="welcome-block">
     <h2 class="visually-hidden">Описание Седоны.</h2>
-    <p class="welcome__slogan">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
+    <p class="welcome__slogan">Седона — небольшой<br class="br__mobile"> городок в аризоне,<br class="br__mobile"> заслуживающий большего!</p>
     <p class="welcome__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
   </section>
   <section class="characteristics characteristics__image-1">
     <div class="characteristics__wrapper characteristics__wrapper-1 characteristics__blu-block">
       <h2 class="characteristics__title">Настоящий городок</h2>
       <div class="characteristics__number-wrapper">
-        <span class="characteristics__number">- №1 -</span>
+        <span class="characteristics__number">— №1 —</span>
         <p class="characteristics__text">Седона не аттракцион для туристов,<br class="br__mobile br__desktop"> там течет своя жизнь</p>
       </div>
     </div>
@@ -83,6 +84,7 @@
         <li class="advantages__item food">
           <h3 class="advantages__title advantages__title__food">Еда</h3>
           <p class="advantages__text advantages__text__food">Всегда заказывайте<br class="br__tablet"> фирменный<br class="br__mobile"> бургер,<br class="br__tablet br__desktop"> Вы не разочаруетесь!</p>
+        </svg>
         </li>
         <li class="advantages__item souvenirs">
           <h3 class="advantages__title advantages__title__souvenirs">Сувениры</h3>
@@ -95,7 +97,7 @@
     <div class="characteristics__wrapper characteristics__wrapper-2 characteristics-1 characteristics__blu-block">
       <h2 class="characteristics__title characteristics__title-1">Там есть Мост дьявола</h2>
       <div class="characteristics__number-wrapper">
-        <span class="characteristics__number">№2</span>
+        <span class="characteristics__number">— №2 —</span>
         <p class="characteristics__text characteristics__text-1">Да, по нему можно пройти!<br class="br__desktop"> Если вы осмелитесь,
           конечно</p>
       </div>
@@ -117,21 +119,21 @@
         <li class="characteristics__item__block">
           <h3 class="characteristics__title__block">Небольшая<br class="br__tablet br__desktop"> площадь</h3>
           <div class="characteristics__number-wrapper__block">
-            <span class="characteristics__number">- №3 -</span>
+            <span class="characteristics__number characteristics__number__block">— №3 —</span>
           </div>
           <p class="characteristics__description__block">Все интересные места<br class="br__tablet"> находятся<br class="br__mobile"> очень<br class="br__desktop"> близко</p>
         </li>
         <li class="characteristics__item__block">
           <h3 class="characteristics__title__block">Красивая<br class="br__tablet br__desktop"> дорога</h3>
           <div class="characteristics__number-wrapper">
-            <span class="characteristics__number">- №4 -</span>
+            <span class="characteristics__number characteristics__number__block">— №4 —</span>
           </div>
-          <p class="characteristics__description__block">Ехать в седону из лас-<br class="br__tablet"> вегаса<br class="br__mobile"> совсем<br class="br__tablet br__desktop"> не скучно!</p>
+          <p class="characteristics__description__block">Ехать в седону из лас-<br class="br__tablet">вегаса<br class="br__mobile"> совсем<br class="br__tablet br__desktop"> не скучно!</p>
         </li>
         <li class="characteristics__item__block">
           <h3 class="characteristics__title__block">Мало<br class="br__tablet br__desktop"> туристов</h3>
           <div class="characteristics__number-wrapper">
-            <span class="characteristics__number">- №5 -</span>
+            <span class="characteristics__number characteristics__number__block">— №5 —</span>
           </div>
           <p class="characteristics__description__block">Большинство едет в гранд<br class="br__tablet"> каньон<br class="br__mobile"> и<br class="br__desktop"> толпится там</p>
         </li>
@@ -144,7 +146,7 @@
       <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br class="br__tablet br__desktop"> и мы покажем вам лучшие предложения
         гостиниц в Седоне
       </p>
-      <a class="button search-hotel__button">Найти гостиницу</a>
+      <button class="button search-hotel__button">Найти гостиницу</button>
     </div>
   </section>
   <article class="map">
@@ -152,8 +154,9 @@
       <source media="(min-width:1200px)" srcset="img/map-desktop@2x.jpg 2x, img/map-desktop@1x.jpg 1x">
       <source media="(min-width:768px)" srcset="img/map-tablet@2x.jpg 2x, img/map-tablet@1x.jpg 1x">
       <source media="(min-width:320px)" srcset="img/bg-map-mobile@2x.jpg 2x, img/bg-map-mobile@1x.jpg 1x">
-      <img class="map__picture" width="320" height="350" src="img/map-desktop@1x.jpg" alt="Map 0f Sedona">
+      <img class="map__picture map-marker" width="320" height="350" src="img/map-desktop@1x.jpg" alt="Map of Sedona">
     </picture>
+    <img class="map-dot" src="img/map-marker.svg" alt="dot">
   </article>
 </main>
 <footer class="page-footer">
@@ -164,7 +167,7 @@
         <a class="social__link" href="#">
           <span class="visually-hidden">Вконтакте.</span>
           <svg class="vk" width="48" height="48">
-            <use xlink:href="img/sprite.svg#icon-vk"></use>
+            <use xlink:href="img/sprite.svg#vk1"></use>
           </svg>
         </a>
       </li>
@@ -172,7 +175,7 @@
         <a class="social__link" href="#">
           <span class="visually-hidden">Телеграм.</span>
           <svg class="telegram" width="48" height="48">
-            <use xlink:href="img/sprite.svg#icon-telegram"></use>
+            <use xlink:href="img/sprite.svg#telegram"></use>
           </svg>
         </a>
       </li>
@@ -180,7 +183,7 @@
         <a class="social__link" href="#">
           <span class="visually-hidden">Ютуб.</span>
           <svg class="youtube" width="48" height="48">
-            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            <use xlink:href="img/sprite.svg#yb"></use>
           </svg>
         </a>
       </li>
@@ -189,10 +192,14 @@
   <p class="page-footer__copyright copyright">
     <b class="copyright__text">Разработано</b>
     <a class="copyright__link" href="#">
+      <svg class="copyright__link" width="48" height="48">
+        <use xlink:href="img/sprite.svg#htmlacademy"></use>
+      </svg>
       <span class="visually-hidden">HTML Academy</span>
     </a>
   </p>
 </footer>
+</div>
 <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
