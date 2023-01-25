@@ -3,7 +3,7 @@
 .page-footer {
   text-transform: uppercase;
   color: #000000;
-  padding: 40px 20px 25px 20px;
+  padding: 32px 20px 25px 20px;
 }
 
 .page-footer__social {
@@ -11,18 +11,61 @@
   justify-content: center;
   flex-wrap: wrap;
   text-decoration: none;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .page-footer__copyright {
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+
+  width: 128px;
+  height: 34px;
+}
+
+.social__list {
+  width: 155px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.vk {
+  display: block;
+  background-image: url("../img/vk1.svg");
+  background-repeat: no-repeat;
+}
+
+.telegram {
+  background-image: url("../img/telegtam.svg");
+  background-repeat: no-repeat;
+}
+
+.youtube {
+  background-image: url("../img/yb.svg");
+  background-repeat: no-repeat;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .copyright__text {
-  margin-right: 11px;
   text-transform: uppercase;
 }
 
@@ -33,8 +76,17 @@
   font-weight: bold;
   line-height: 26px;
   text-decoration: none;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   color: $black;
+  padding-top: 0;
+}
+
+.copyright__link {
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 27px;
+  height: 34px;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,7 +95,7 @@
     margin: 0 auto;
     background-color: $white;
     display: flex;
-    padding: 40px 60px;
+    padding: 30px 60px;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -55,14 +107,41 @@
 
   .page-footer__social {
     margin: 0;
+    margin-left: 112px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-footer {
-    width: $desktop-width;
-    padding-left: 120px;
-    padding-right: 120px;
-    box-sizing: border-box;
+  .copyright {
+    margin-right: 16px;
+  }
+
+  .social__item {
+
+    &:hover,
+    &:focus {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+
+      svg {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .page-footer {
+      width: $desktop-width;
+      padding-left: 120px;
+      padding-right: 120px;
+      box-sizing: border-box;
+      padding: 31px 120px;
+    }
+
+    .page-footer__social {
+      margin: 0;
+      margin-left: 268px;
+    }
   }
 }

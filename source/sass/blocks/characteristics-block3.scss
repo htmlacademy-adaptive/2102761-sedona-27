@@ -3,24 +3,116 @@
   background-color: #eeeeee;
 }
 
-.characteristics__list {
+.characteristics__list__block {
   list-style: none;
   margin: 0;
   padding: 0;
   justify-content: space-between;
   text-align: center;
+  padding: 24px 18px 5px;
 }
 
+.characteristics__description__block {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.characteristics__item__block {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.characteristics__item__block:last-child {
+  border-bottom: none;
+}
+
+.characteristics__item__block:nth-child(2) {
+  margin-top: 25px;
+}
+
+.characteristics__item__block:nth-child(3) {
+  margin-top: 25px;
+}
+
+.characteristics__title__block {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+
 @media (min-width: $tablet-width) {
-  .characteristics__list {
+  .characteristics__list__block {
     display: flex;
     flex-direction: row;
+    padding: 0;
+  }
+
+  .characteristics__title__block {
+    margin-bottom: 13px;
+    font-size: 21px;
+  }
+
+  .characteristics__item__block {
+    padding: 0;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .characteristics__item__block:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .characteristics__item__block:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .characteristics__description__block {
+    margin: 0;
+    margin-bottom: 2px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .characteristics__list {
+  .characteristics-block3 {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .characteristics__list__block {
     display: flex;
     flex-direction: row;
+  }
+
+  .characteristics__item__block {
+    width: 400px;
+  }
+
+  .characteristics__number__block {
+    margin-bottom: 23px;
+  }
+
+  .characteristics__description__block {
+    margin: 0;
+    margin-bottom: -20px;
+  }
+
+  .characteristics__item__block:nth-child(2) {
+    margin-top: -11px;
+  }
+
+  .characteristics__title__block {
+    margin-bottom: 14px;
   }
 }

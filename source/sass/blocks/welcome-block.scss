@@ -1,8 +1,8 @@
 .welcome-block {
-  padding-left: 20px;
+  padding-left: 17px;
   padding-right: 20px;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 16px;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -19,7 +19,9 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
+  padding-top: 1px;
+  padding-left: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,6 +29,32 @@
     width: 490px;
     margin: 0 auto;
     text-align: center;
-    padding: 50px 0;
+    padding: 48px 0 56px;
+  }
+
+  .welcome__slogan {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 29px;
+    font-size: 21px;
+  }
+
+  .welcome__text {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .welcome-block {
+    padding: 59px 0 56px;
+  }
+
+  .welcome__slogan {
+    margin-bottom: 29px;
+  }
+
+  .welcome__text {
+    margin-bottom: -11px;
   }
 }

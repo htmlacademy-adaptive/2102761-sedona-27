@@ -1,16 +1,80 @@
 img {
-  max-width: 100%;
   height: auto;
 }
 
 .welcome-block__image {
   text-align: center;
   background-color: #d3edfb;
-  background-image: url("./source/img/back-desktop.jpg.jpg");
-  height: 390px;
-  position: relative;
+  background-image: url("../img/group-mobile.svg"), url("../img/back-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center top;
+  height: 389px;
+}
+
+.welcome-block--inner {
+  background-size: cover;
+  background-position: bottom center, center bottom;
+}
+
+.welcome-block__wrapper {
+  text-align: center;
+  padding-top: 90px;
 }
 
 .promo__text-image {
-  height: 390px;
+  display: none;
+  margin: auto;
+}
+
+@media (max-width: $mobile-width-only) {
+  .promo__text-image__mobile {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .welcome-block__image {
+    text-align: center;
+    background-color: #d3edfb;
+    background-image: url("../img/group-6-tablet.svg"), url("../img/back-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -1px center, center top;
+    height: 390px;
+    position: relative;
+    background-size: 100%;
+  }
+
+  .welcome-block--inner {
+    height: 518px;
+  }
+
+  .welcome-block__wrapper--inner {
+    padding-top: 77px;
+  }
+
+  .welcome-block__text-image {
+    width: 460px;
+  }
+
+  .promo__text-image__tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .welcome-block__image {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #d3edfb;
+    background-image: url("../img/group-6-descktop.svg"), url("../img/back-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center top;
+    height: 518px;
+    position: relative;
+  }
+
+  .promo__text-image {
+    width: 460px;
+  }
 }

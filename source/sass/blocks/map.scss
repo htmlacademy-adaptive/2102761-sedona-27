@@ -1,16 +1,21 @@
 .map {
   position: relative;
-  height: 350px;
+  //height: 350px;
   overflow: hidden;
-  background-color: #f4f3f0;
+  margin: 0 auto;
+  width: 320px;
 }
 
-.mao__picture {
+.map-marker {
+  overflow: visible;
+  background-image: url("../img/map-marker.svg");
+}
+
+.map-dot {
   position: absolute;
-  top: 50%;
   left: 50%;
-  height: auto;
-  transform: translate (-50%, -50%);
+  top: 45%;
+  transform: translate(-50%);
 }
 
 @media (min-width: $tablet-width) {
@@ -18,8 +23,11 @@
   .map__picture {
     width: 768px;
   }
-}
 
+  .map-dot {
+    top: 46%;
+  }
+}
 @media (min-width: $desktop-width) {
   .map,
   .map__picture {

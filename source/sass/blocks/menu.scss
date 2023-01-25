@@ -26,7 +26,6 @@
   }
 
   .menu-list__item {
-    width: 20%;
     font-size: 14px;
     line-height: 26px;
   }
@@ -41,6 +40,26 @@
     font-size: 14px;
     font-weight: bold;
     color: #000000;
+  }
+
+  .menu-list__link.active {
+    color: #766357;
+  }
+
+  .menu-list__link:not([href]) {
+    &:hover,
+    &:focus {
+      color: #766357;
+    }
+  }
+
+  .menu-list__link:active,
+  .menu-list__link:focus {
+    color: #756257;
+  }
+
+  .menu-list__link:hover {
+    color: #756257;
   }
 }
 
