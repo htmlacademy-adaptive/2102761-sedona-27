@@ -11,7 +11,7 @@
   text-align: center;
   margin-bottom: 35px;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
 }
 
@@ -19,7 +19,9 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 21px;
+  padding-top: 1px;
+  padding-left: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,7 +35,8 @@
   .welcome__slogan {
     margin: 0;
     padding: 0;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
+    font-size: 21px;
   }
 
   .welcome__text {

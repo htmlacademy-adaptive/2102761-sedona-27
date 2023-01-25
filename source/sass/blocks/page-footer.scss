@@ -3,7 +3,7 @@
 .page-footer {
   text-transform: uppercase;
   color: #000000;
-  padding: 38px 20px 25px 20px;
+  padding: 32px 20px 25px 20px;
 }
 
 .page-footer__social {
@@ -95,7 +95,7 @@
     margin: 0 auto;
     background-color: $white;
     display: flex;
-    padding: 36px 60px;
+    padding: 30px 60px;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -113,19 +113,35 @@
   .copyright {
     margin-right: 16px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-footer {
-    width: $desktop-width;
-    padding-left: 120px;
-    padding-right: 120px;
-    box-sizing: border-box;
-    padding: 38px 120px;
+  .social__item {
+
+    &:hover,
+    &:focus {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+
+      svg {
+        opacity: 0.3;
+      }
+    }
   }
 
-  .page-footer__social {
-    margin: 0;
-    margin-left: 268px;
+  @media (min-width: $desktop-width) {
+    .page-footer {
+      width: $desktop-width;
+      padding-left: 120px;
+      padding-right: 120px;
+      box-sizing: border-box;
+      padding: 31px 120px;
+    }
+
+    .page-footer__social {
+      margin: 0;
+      margin-left: 268px;
+    }
   }
 }

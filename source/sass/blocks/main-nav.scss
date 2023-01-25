@@ -17,9 +17,12 @@
   cursor: pointer;
   border: none;
 
-  &:hover,
+  &:hover {
+    color: #81b3d2;
+  }
+
   &:active {
-    background-color: #81b3d2;
+    color: #81b3d2;
   }
 
   @media (min-width: $tablet-width) {
@@ -107,15 +110,16 @@
   right: 0;
   left: auto;
   z-index: 100;
+  background-color: transparent;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
+    top: 26px;
     left: 18px;
-    width: 36px;
-    height: 2px;
+    width: 29px;
+    height: 4px;
     background-color: #ffffff;
   }
 

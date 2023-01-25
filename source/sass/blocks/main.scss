@@ -1,5 +1,6 @@
 .main-container {
   display: block;
+  max-width: 1200px;
 }
 
 @media (min-width: $tablet-width) {

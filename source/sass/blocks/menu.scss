@@ -42,8 +42,24 @@
     color: #000000;
   }
 
-  .menu-list__link:not([href]) {
+  .menu-list__link.active {
     color: #766357;
+  }
+
+  .menu-list__link:not([href]) {
+    &:hover,
+    &:focus {
+      color: #766357;
+    }
+  }
+
+  .menu-list__link:active,
+  .menu-list__link:focus {
+    color: #756257;
+  }
+
+  .menu-list__link:hover {
+    color: #756257;
   }
 }
 
