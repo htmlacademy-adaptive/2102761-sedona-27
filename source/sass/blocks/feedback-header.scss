@@ -1,43 +1,49 @@
 @import "../viewports";
 
 .feedback-header {
-  padding: 40px 20px 30px 20px;
+  padding: 39px 20px 29px 20px;
   text-align: center;
 }
 
 .feedback-header__title {
-  margin-bottom: 35px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
   font-weight: bold;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 21px;
   text-transform: uppercase;
 }
 
 .feedback-header__description {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
   .feedback-header {
     padding: 0;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 66px;
+    padding-bottom: 101px;
   }
 
   .feedback-header__title {
     font-size: 30px;
+    margin-bottom: 24px;
   }
 
   .feedback-header__description {
-    padding: 0 163px;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
-    width: 100%;
+    width: 1200px;
     box-sizing: border-box;
   }
 
@@ -45,9 +51,21 @@
     padding-left: 120px;
     padding-right: 120px;
     box-sizing: border-box;
+    padding-top: 115px;
+    padding-bottom: 102px;
   }
 
   .feedback-header__description {
-    padding: 0 139px;
+    margin-bottom: -38px;
+    line-height: 22px;
   }
+
+  .feedback-header__title {
+    margin-bottom: 31px;
+  }
+
+  .feedback-header__description {
+    line-height: 26px;
+  }
+
 }

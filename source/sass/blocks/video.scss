@@ -3,10 +3,14 @@
 }
 
 .video__promo {
-  padding: 35px 20px;
+  padding: 18px 20px;
+  margin-bottom: -52px;
 }
 
 .video__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -14,20 +18,44 @@
 }
 
 .video__description {
-  line-height: 24px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-left: 3px;
 }
 
 .video__image {
   display: block;
+  padding: 2px 20px;
+}
+
+.video__clip {
+  margin-bottom: -5px;
 }
 
 .video__image-poster {
   width: 320px;
   margin: 0 auto;
-  padding-top: 22px;
+  padding-top: 56px;
 }
+
+.gallery__item:last-child {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.video-marker {
+  position: relative;
+  overflow: visible;
+  background-image: url("../img/polygon.svg");
+}
+
+.video-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}
+
 
 @media (min-width: $tablet-width) {
   .video {
@@ -35,16 +63,16 @@
   }
 
   .video__promo {
-    padding: 65px 60px;
+    padding: 55px 60px;
   }
 
   .video__title {
     font-size: 30px;
+    margin-bottom: 33px;
   }
 
   .video__description {
-    padding-left: 110px;
-    padding-right: 94px;
+padding-left: 0;
   }
 
   .video__clip {
@@ -54,20 +82,35 @@
 
   .video__image {
     width: 100%;
+    padding: 0;
   }
 
   .video__image-poster {
     width: 648px;
+    padding-top: 71px;
+    margin-bottom: 46px;
+  }
+
+  .video-dot {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-48%);
   }
 }
 
 @media (min-width: $desktop-width) {
+  .video {
+    margin-bottom: 90px;
+  }
+
   .video__promo {
-    padding: 70px 200px;
+    padding: 59px 200px;
   }
 
   .video__description {
-    padding: 0 177px;
+    padding-left: 18px;
+    margin-top: 0px;
   }
 
   .video__clip {
@@ -77,5 +120,24 @@
 
   .video__image-poster {
     width: 800px;
+    margin-bottom: 56px;
+    padding-top: 66px;
+  }
+
+  .video__title {
+    padding-left: 16px;
+    margin-bottom: 31px;
+  }
+
+  .video__image {
+    display: block;
+    padding: 0px 7px;
+  }
+  .video-dot {
+    position: absolute;
+    left: 51%;
+    top: 51%;
+    transform: translate(-53%);
   }
 }
+
