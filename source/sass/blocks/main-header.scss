@@ -54,4 +54,8 @@
   .main-header {
     width: 1200px;
   }
+
+  .main-header__logo {
+    transform: translateX(-50%);
+  }
 }

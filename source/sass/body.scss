@@ -28,13 +28,22 @@ input {
   display: none;
 }
 
+@media (max-width: $mobile-width-only) {
+  main {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .br__mobile {
     display: none;
   }
+
   .br__desktop {
     display: none;
   }
+
   .br__tablet {
     display: block;
   }
@@ -51,5 +60,9 @@ input {
 
   .br__desktop {
     display: block;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }
