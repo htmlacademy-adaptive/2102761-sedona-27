@@ -463,10 +463,6 @@
     padding-bottom: 4px;
   }
 
-  .form__group-wrapper {
-    justify-content: space-between;
-  }
-
   .form__group {
     align-items: center;
   }
@@ -540,11 +536,8 @@
 
   .form__group-wrapper {
     margin-left: 65px;
-  }
-
-  .form__container--communication {
-    //padding-left: 63px;
-  }
+      justify-content: space-between;
+    }
 
   .form__container--fullname:first-child:before {
     right: 0;

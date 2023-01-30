@@ -44,18 +44,36 @@
 
 .vk {
   display: block;
-  background-image: url("../img/vk1.svg");
+  background: url("../img/vk1.svg"), #81B3D2;
   background-repeat: no-repeat;
+  background-position: center center;
+  &:hover{
+    background: url("../img/vk1.svg"), #669EC0;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 .telegram {
-  background-image: url("../img/telegtam.svg");
+  background: url("../img/telegtam.svg"), #81B3D2;
   background-repeat: no-repeat;
+  background-position: center center;
+  &:hover{
+    background: url("../img/telegtam.svg"), #669EC0;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 .youtube {
-  background-image: url("../img/yb.svg");
+  background: url("../img/yb.svg"), #81B3D2;
   background-repeat: no-repeat;
+  background-position: center center;
+  &:hover{
+    background: url("../img/yb.svg"), #669EC0;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 .copyright {
@@ -67,6 +85,7 @@
 
 .copyright__text {
   text-transform: uppercase;
+  color: black;
 }
 
 .page-footer__hashtag {
@@ -114,6 +133,26 @@
     margin-right: 16px;
   }
 
+  .page-footer__copyright:hover {
+
+    .copyright__text {
+      color: #81B3D2;
+    }
+    .copyright__link {
+      background-image: url(../img/htmlacademyHover.svg);
+    }
+  }
+
+  .page-footer__copyright:active {
+
+    .copyright__text {
+      color: #B3B3B3;
+    }
+    .copyright__link {
+      background-image: url(../img/htmlacademyActive.svg);
+    }
+  }
+
   .copyright-form {
     padding: 30px 58px;
     margin-right: -58px;
@@ -138,6 +177,8 @@
     }
   }
 
+
+
   .social__list {
     width: 156px;
   }
@@ -155,5 +196,9 @@
   .page-footer__social {
     margin: 0;
     margin-left: 268px;
+  }
+
+  .social__link:hover {
+
   }
 }

@@ -11,7 +11,8 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
-<header class="main-header"><a class="main-header__logo"><img class="main-header-logo" src="img/logo_sedona-mobile.svg" width="" height="" alt="Логотип Седона."></a>
+<div class="shadows">
+<header class="main-header"><a href="index.html" class="main-header__logo"><img class="main-header-logo" src="img/logo_sedona-mobile.svg" width="" height="" alt="Логотип Седона."></a>
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <div class="main-nav__wrapper">
       <ul class="menu-nav__list site-list">
@@ -135,17 +136,31 @@
 <footer class="page-footer"><a class="page-footer__hashtag" href="#">#visitsedona</a>
   <div class="page-footer__social social">
     <ul class="social__list">
-      <li class="social__item vk"><a class="social__link" href="#"><span class="visually-hidden">Вконтакте.</span></a>
-      </li>
-      <li class="social__item telegram"><a class="social__link" href="#"><span class="visually-hidden">Телеграм.</span></a>
-      </li>
-      <li class="social__item youtube"><a class="social__link" href="#"><span class="visually-hidden">Ютуб.</span></a>
-      </li>
+      <li class="social__item"><a class="social__link" href="#"><span class="visually-hidden">Вконтакте.</span>
+        <svg class="vk" width="48" height="48">
+          <use xlink:href="img/sprite.svg#vk1"></use>
+        </svg>
+      </a></li>
+      <li class="social__item"><a class="social__link" href="#"><span class="visually-hidden">Телеграм.</span>
+        <svg class="telegram" width="48" height="48">
+          <use xlink:href="img/sprite.svg#telegram"></use>
+        </svg>
+      </a></li>
+      <li class="social__item"><a class="social__link" href="#"><span class="visually-hidden">Ютуб.</span>
+        <svg class="youtube" width="48" height="48">
+          <use xlink:href="img/sprite.svg#yb"></use>
+        </svg>
+      </a></li>
     </ul>
   </div>
-  <p class="page-footer__copyright copyright copyright-form"><b class="copyright__text">Разработано</b> <a class="copyright__link"
-                                                                                            href="#"><span
-    class="visually-hidden">HTML Academy</span></a></p></footer>
+  <p class="page-footer__copyright copyright"><b class="copyright__text">Разработано</b> <a class="copyright__link"
+                                                                                            href="#">
+    <svg class="copyright__link" width="48" height="48">
+      <use xlink:href="img/sprite.svg#htmlacademy"></use>
+    </svg>
+    <span class="visually-hidden">HTML Academy</span></a></p>
+</footer>
+</div>
 <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>

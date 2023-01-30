@@ -5,7 +5,7 @@
     max-width: 1200px;
     margin: 0 auto;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: 0;
@@ -15,7 +15,7 @@
       box-shadow: -15px 0 10px -19px inset;
     }
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       right: -15px;

@@ -11,6 +11,7 @@
   background-image: url("../img/group-4-mobile.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center top;
+  padding-top: 23px;
 }
 
 .characteristics__wrapper {
@@ -19,10 +20,6 @@
 
 .characteristics__wrapper-1 {
   padding-top: 34px;
-}
-
-.characteristics__image-1 {
-  padding-top: 23px;
 }
 
 .characteristics__blu-block {
@@ -92,9 +89,6 @@
   .characteristics__image {
     display: flex;
     flex-direction: row;
-  }
-
-  .characteristics__image {
     width: 100%;
   }
 
@@ -112,6 +106,7 @@
 
   .characteristics__image-1 {
     padding-top: 0;
+    background-image: none;
   }
 
   .characteristics {
@@ -124,10 +119,6 @@
 
   .characteristics__invert {
     flex-direction: row-reverse;
-  }
-
-  .characteristics__image-1 {
-    background-image: none;
   }
 
   .characteristics__text {
