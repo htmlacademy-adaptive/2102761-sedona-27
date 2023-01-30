@@ -68,32 +68,27 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     color: $white;
+    padding: 24px 0 16px;
   }
 
   .gallery-image__author {
     color: $white;
     margin-bottom: 0;
   }
-
-  .gallery-image__footer {
-    padding: 24px 0 16px;
-  }
-
   .gallery-image__sign {
     padding-left: 21px;
   }
 
   .gallery-image__title {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .gallery-image__footer1 {
     padding: 22px 0 15px;
   }
 
-  .gallery-image__sign1{
+  .gallery-image__sign1 {
     padding-left: 26px;
     margin-bottom: 5px;
   }
-
 }

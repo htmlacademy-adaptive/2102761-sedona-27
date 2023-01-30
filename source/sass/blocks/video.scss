@@ -72,7 +72,7 @@
   }
 
   .video__description {
-padding-left: 0;
+    padding-left: 0;
   }
 
   .video__clip {
@@ -110,7 +110,7 @@ padding-left: 0;
 
   .video__description {
     padding-left: 18px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .video__clip {
@@ -131,8 +131,9 @@ padding-left: 0;
 
   .video__image {
     display: block;
-    padding: 0px 7px;
+    padding: 0 7px;
   }
+
   .video-dot {
     position: absolute;
     left: 51%;
@@ -140,4 +141,3 @@ padding-left: 0;
     transform: translate(-53%);
   }
 }
-

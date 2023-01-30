@@ -22,16 +22,6 @@
   height: 21px;
   background-repeat: no-repeat, no-repeat;
   margin-top: -7px;
-
-}
-
-.gallery-image__likes {
-
-}
-
-.likes__icon-like {
-
-
 }
 
 @media (min-width: $tablet-width) {
@@ -43,14 +33,12 @@
   .likes__like-button {
     background-position: top 0 left 0;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .likes__count {
     padding-right: 20px;
   }
-
 
   .likes__like-button {
     padding: 0;
@@ -63,11 +51,9 @@
     height: 21px;
     background-repeat: no-repeat, no-repeat;
     margin-top: -7px;
-
   }
 
   .likes {
     margin-bottom: 1px;
   }
-
 }

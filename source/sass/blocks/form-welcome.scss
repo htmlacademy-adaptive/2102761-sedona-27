@@ -7,23 +7,13 @@
   height: 158px;
 }
 
-.form-welcome--inner {
-}
-
 .form-welcome__wrapper {
   text-align: center;
   padding-top: 52px;
-
-}
-
-.form-welcome__wrapper--inner {
-
-
 }
 
 .form-welcome__text-image {
   margin: auto;
-
 }
 
 @media (max-width: $mobile-width-only) {
@@ -32,21 +22,16 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .form-welcome__image {
     text-align: center;
     background-color: #d3edfb;
     background-image: url("../img/group-6-tablet.svg"), url("../img/photo-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-
     height: 290px;
     position: relative;
     background-size: contain, cover;;
-
     background-position: left bottom, left bottom;
-
-
   }
 
 

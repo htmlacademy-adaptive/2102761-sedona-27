@@ -1,4 +1,4 @@
-.photo-welcome__image{
+.photo-welcome__image {
   text-align: center;
   background-color: #d3edfb;
   background-image: url("../img/group-mobile.svg"), url("../img/photo-back-mobile@1x.jpg");
@@ -7,35 +7,23 @@
   height: 158px;
 }
 
-
-.photo-welcome--inner{
-}
-
-.photo-welcome__wrapper{
+.photo-welcome__wrapper {
   text-align: center;
   padding-top: 52px;
-
 }
 
-.photo-welcome__wrapper--inner{
-
-
-}
-
-.photo-welcome__text-image{
+.photo-welcome__text-image {
   margin: auto;
-
 }
 
 @media (max-width: $mobile-width-only) {
-  .photo-welcome__image{
+  .photo-welcome__image {
     display: block;
   }
 }
 
-
 @media (min-width: $tablet-width) {
-  .photo-welcome__image{
+  .photo-welcome__image {
     text-align: center;
     background-color: #d3edfb;
     background-image: url("../img/group-6-tablet.svg"), url("../img/photo-back-tablet@1x.jpg");
@@ -45,12 +33,11 @@
     background-size: 100%;
   }
 
-
-  .photo-welcome__wrapper--inner{
+  .photo-welcome__wrapper--inner {
     padding-top: 94px;
   }
 
-  .photo-welcome__text-image{
+  .photo-welcome__text-image {
     width: 457px;
   }
 
@@ -60,7 +47,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photo-welcome__image{
+  .photo-welcome__image {
     width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -71,14 +58,13 @@
     position: relative;
   }
 
-  .photo-welcome__text-image{
+  .photo-welcome__text-image {
     width: 460px;
     padding-top: 9px;
     padding-right: 4px;
   }
 
-  .photo-welcome__wrapper--inner{
+  .photo-welcome__wrapper--inner {
     padding-top: 94px;
   }
-
 }

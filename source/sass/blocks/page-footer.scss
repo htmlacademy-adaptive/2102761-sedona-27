@@ -110,7 +110,6 @@
     margin-left: 111px;
   }
 
-
   .copyright {
     margin-right: 16px;
   }
@@ -124,9 +123,7 @@
     margin-right: 0;
   }
 
-
   .social__item {
-
     &:hover,
     &:focus {
       background-color: #669ec0;
@@ -145,7 +142,6 @@
     width: 156px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .page-footer {
