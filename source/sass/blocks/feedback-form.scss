@@ -49,7 +49,7 @@
 .form__label {
   line-height: 21px;
   text-transform: uppercase;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   display: block;
   padding-left: 16px;
   box-sizing: border-box;
@@ -59,7 +59,7 @@
   font-weight: bold;
   font-size: 18px;
   background-color: #f2f2f2;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "sans-serif";
   height: 58px;
   box-sizing: border-box;
   width: 100%;
@@ -69,15 +69,7 @@
 
 .form__input-icon-group {
   position: relative;
-
 }
-
-
-//.form__input__phone {
-//  background-image: url("../img/phone1.svg");
-//  background-position: right center;
-//  background-repeat: no-repeat;
-//}
 
 .form__input--textarea {
   min-height: 150px;
@@ -180,7 +172,6 @@
 }
 
 .fakeRadio_check {
-  //display: block;
   display: none;
   width: 16px;
   height: 16px;
@@ -240,7 +231,6 @@
 
 .form__legend--impression {
   padding-top: 1px;
-
 }
 
 .form__selector-text {
@@ -253,9 +243,7 @@
 }
 
 .form__selector-label__checkbox {
-
   margin-bottom: 16px;
-
 }
 
 .form__legend-fixed-content {
@@ -289,7 +277,9 @@
     //padding-bottom: 45px;
   }
 
-  .form__container--impression, .form__container--sights, .form__container--button {
+  .form__container--impression,
+  .form__container--sights,
+  .form__container--button {
     margin-bottom: 42px;
   }
 
@@ -342,11 +332,11 @@
     right: 0;
     width: 1px;
     height: 100%;
-    background-color: #DBDBDB;
+    background-color: #dbdbdb;
   }
 
   .form__container--button {
-    padding-top: 0px;
+    padding-top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -464,7 +454,6 @@
   .form__group-wrapper {
     margin-left: 45px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -472,10 +461,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 4px;
-  }
-
-  .form__label-hidden {
-    display: none;
   }
 
   .form__group-wrapper {
@@ -505,16 +490,13 @@
 
   .feedback__form__wrapper__inputs {
     display: flex;
+    gap: 0;
+    margin-bottom: 54px;
   }
 
   .form__container--button {
     padding-top: 0;
     padding-left: 97px;
-  }
-
-  .feedback__form__wrapper__inputs {
-    gap: 0;
-    margin-bottom: 54px;
   }
 
   .button--review {
@@ -547,7 +529,6 @@
     padding-right: 96px;
   }
 
-
   .form__group--fullname, {
     margin-right: 63px;
     width: 430px;
@@ -555,8 +536,8 @@
 
   .form__input-icon-group {
     width: 402px;
-
   }
+
   .form__group-wrapper {
     margin-left: 65px;
   }
@@ -573,11 +554,11 @@
     display: inline;
   }
 
-  .form__legend--review::before, .form__legend--review::after {
+  .form__legend--review::before,
+  .form__legend--review::after {
     width: 280px;
     top: 15px;
   }
-
 
   .form__legend {
     margin-bottom: 28px;

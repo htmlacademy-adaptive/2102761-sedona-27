@@ -34,13 +34,16 @@ input {
     margin: 0 auto;
   }
 }
+
 @media (min-width: $tablet-width) {
   .br__mobile {
     display: none;
   }
+
   .br__desktop {
     display: none;
   }
+
   .br__tablet {
     display: block;
   }
